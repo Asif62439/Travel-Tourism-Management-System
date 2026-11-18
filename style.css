@@ -1,0 +1,324 @@
+/* ==========================================================
+   style.css  -  Hotel Booking | Tourism Website
+   Link it in <head>:  <link rel="stylesheet" href="style.css">
+   ========================================================== */
+
+/* ---------- 1. Universal / base ---------- */
+* {
+  box-sizing: border-box;          /* width includes padding + border */
+}
+
+html {
+  scroll-behavior: smooth;         /* smooth jump when a nav link is clicked */
+}
+
+body {
+  margin: 0;
+  padding-top: 56px;               /* space so the fixed navbar hides nothing */
+  background-color: #f4f7fa;
+  color: #2b2b2b;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ---------- 2. Navigation bar (always on top) ---------- */
+nav {
+  position: fixed;                 /* stays in place while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  z-index: 1000;                   /* always above the other content */
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 22px;
+  line-height: 56px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #f2a900;
+  color: #2b2b2b;
+}
+
+/* ---------- 3. Headings ---------- */
+h1 {
+  margin: 0;
+  padding: 32px 20px;
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  border-bottom: 3px solid #f2a900;
+}
+
+h3 {
+  margin: 12px 0 6px;
+  font-size: 1.2rem;
+}
+
+/* ---------- 4. Page sections ---------- */
+#hotel-list {
+  max-width: 1000px;               /* fluid: shrinks on small screens */
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  text-align: center;
+}
+
+#booking {
+  max-width: 600px;
+  margin: 40px auto 0;
+  padding: 10px 28px 28px;
+  text-align: left;
+}
+
+/* ---------- 5. Hotel cards ---------- */
+#hotel-list > article {
+  display: inline-block;           /* three cards in one row */
+  vertical-align: top;
+  width: 30%;
+  margin: 12px 1.2%;
+  padding: 0 0 16px;
+  overflow: hidden;                /* keeps image inside rounded corners */
+  text-align: center;
+  transition: box-shadow 0.3s, opacity 0.3s;
+}
+
+#hotel-list > article:hover {
+  box-shadow: 0 8px 20px #0b5d7a;
+  opacity: 0.95;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;               /* crop instead of stretching */
+}
+
+article p {
+  margin: 0;
+  padding: 0 14px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+article ul {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0 14px;
+}
+
+article li {
+  display: inline-block;           /* amenities shown as little tags */
+  margin: 3px 2px;
+  padding: 3px 10px;
+  background-color: #e3f3f8;
+  color: #0b5d7a;
+  border-radius: 20px;
+  font-size: 0.78rem;
+}
+
+/* ---------- 6. Room types table ---------- */
+table {
+  width: 100%;
+  margin: 40px 0 10px;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: left;
+}
+
+caption {
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 12px 14px;
+  border: 1px solid #d5dde3;
+}
+
+th {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eef6f9;       /* zebra stripes */
+}
+
+tbody tr:hover {
+  background-color: #fff2cc;       /* row highlight on hover */
+}
+
+/* ---------- 7. Booking form ---------- */
+form p {
+  margin: 14px 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 12px;
+  border: 2px solid #b8c4cc;
+  border-radius: 6px;
+  background-color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0b5d7a;
+  box-shadow: 0 0 6px #0b5d7a;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* radio buttons + checkbox keep natural size; their labels sit beside them */
+#pay_cash, #pay_card, #pay_mobile, #terms {
+  width: auto;
+  margin: 0 8px 0 0;
+}
+
+label[for="pay_cash"],
+label[for="pay_card"],
+label[for="pay_mobile"],
+label[for="terms"] {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+/* ---------- 8. Buttons ---------- */
+button {
+  padding: 10px 24px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"] {
+  background-color: #0b5d7a;
+}
+
+button[type="reset"] {
+  background-color: #7a838a;
+}
+
+button[type="submit"]:hover {
+  background-color: #1488b0;
+}
+
+button[type="reset"]:hover {
+  background-color: #a0a8ae;
+}
+
+/* ---------- 9. GROUPED RULES (shared styles) ---------- */
+
+/* same blue everywhere */
+h1, nav, th {
+  background-color: #0b5d7a;
+}
+
+h2, h3, caption {
+  color: #0b5d7a;
+}
+
+/* same shadow on every "box" */
+nav, #hotel-list > article, table, #booking {
+  box-shadow: 0 4px 12px gray;
+}
+
+/* same white card look */
+#hotel-list > article, #booking {
+  background-color: white;
+  border: 1px solid #d5dde3;
+  border-radius: 12px;
+}
+
+/* anchor targets stop below the fixed navbar when a nav link is clicked */
+#hotel-list, table, #booking {
+  scroll-margin-top: 70px;
+}
+
+/* ---------- 10. Helper classes for JavaScript (DOM) ---------- */
+.error {
+  border-color: #d93025;
+  background-color: #fdecea;
+}
+
+.success {
+  border-color: #1e8e3e;
+  background-color: #e6f4ea;
+}
+
+.error-message {
+  display: block;
+  margin-top: 4px;
+  color: #d93025;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------- 11. Small screens ---------- */
+@media (max-width: 800px) {
+  #hotel-list > article {
+    display: block;                /* cards stack one per row */
+    width: auto;
+    margin: 16px 0;
+  }
+
+  nav a {
+    padding: 0 10px;
+    font-size: 0.85rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  #booking {
+    padding: 10px 16px 24px;
+  }
+}
