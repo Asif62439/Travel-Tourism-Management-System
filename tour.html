@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoreline — Tour Packages</title>
+    <link rel="stylesheet" href="tourstyle.css">
+</head>
+<body>
+
+    <header class="top" id="home">
+        <div class="wrap bar">
+            <a class="brand" href="#home">◈ Shoreline</a>
+
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section class="hero">
+            <div>
+                <h1>Find your next <strong>escape.</strong></h1>
+                <p>Explore Bangladesh and international tour packages.</p>
+                <a class="btn primary" href="#packages">Explore packages</a>
+            </div>
+
+            <figure>
+                <img src="hero.jpeg" alt="Cox’s Bazar beach" width="320">
+            </figure>
+        </section>
+
+        <nav id="packages" aria-label="Package regions">
+            <a href="#bangladesh">Bangladesh</a>
+            <a href="#international">International</a>
+        </nav>
+
+        <section id="bangladesh">
+            <h2>Bangladesh packages</h2>
+
+            <div class="cards">
+                <div class="card" id="coxs-bazar">
+                    <figure>
+                        <img src="cox%20bazar.jpeg" alt="Cox’s Bazar beach" width="320" >
+                    </figure>
+
+                    <h3>Cox’s Bazar</h3>
+                    <p class="muted">3 days · 2 nights · Beach</p>
+                    <p><strong>৳4,500</strong> per person</p>
+
+                    <div class="package-details">
+                        <h4>Cox’s Bazar Beach Escape</h4>
+                        <p><strong>Included</strong> — Hotel, breakfast and local sightseeing</p>
+                        <h4>Itinerary</h4>
+                        <ol>
+                            <li>Hotel check-in and sunset at Laboni Beach.</li>
+                            <li>Visit Inani and Himchari along Marine Drive.</li>
+                            <li>Breakfast, time for shopping and departure.</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        <a class="btn primary" href="#booking"
+                           onclick="showBooking('coxs-bazar')">Book now</a>
+                    </p>
+                </div>
+
+                <div class="card" id="sundarbans">
+                    <figure>
+                        <img src="sundarbons%5C.jpeg"
+                             alt="A boat on a mangrove creek in the Sundarbans" width="320">
+                    </figure>
+
+                    <h3>Sundarbans</h3>
+                    <p class="muted">3 days · 2 nights · Wildlife</p>
+                    <p><strong>৳7,800</strong> per person</p>
+
+                    <div class="package-details">
+                        <h4>Sundarbans Wildlife Cruise</h4>
+                        <p><strong>Included</strong> — Boat cabin, meals and guided excursions</p>
+                        <h4>Itinerary</h4>
+                        <ol>
+                            <li>Depart from Khulna and cruise into the mangroves.</li>
+                            <li>Explore the forest trails with a local guide.</li>
+                            <li>Take the morning river cruise back to Khulna.</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        <a class="btn primary" href="#booking"
+                           onclick="showBooking('sundarbans')">Book now</a>
+                    </p>
+                </div>
+
+                <div class="card" id="sajek">
+                    <figure>
+                        <img src="sajek.jpeg" alt="Clouds over the hills in Sajek Valley" width="320" >
+                    </figure>
+
+                    <h3>Sajek Valley</h3>
+                    <p class="muted">2 days · 1 night · Hills</p>
+                    <p><strong>৳6,200</strong> per person</p>
+
+                    <div class="package-details">
+                        <h4>Sajek Valley Getaway</h4>
+                        <p><strong>Included</strong> — Cottage, breakfast and local transport</p>
+                        <h4>Itinerary</h4>
+                        <ol>
+                            <li>Travel to Sajek and watch sunset from the valley.</li>
+                            <li>Visit a viewpoint before returning.</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        <a class="btn primary" href="#booking"
+                           onclick="showBooking('sajek')">Book now</a>
+                    </p>
+                </div>
+
+                <div class="card" id="sreemangal">
+                    <figure>
+                        <img src="Srimangal.jpg" alt="Tea garden in Sreemangal" width="320">
+                    </figure>
+
+                    <h3>Sreemangal</h3>
+                    <p class="muted">2 days · 1 night · Nature</p>
+                    <p><strong>৳3,900</strong> per person</p>
+
+                    <div class="package-details">
+                        <h4>Sreemangal Tea Trails</h4>
+                        <p><strong>Included</strong> — Hotel, breakfast and a guided walk</p>
+                        <h4>Itinerary</h4>
+                        <ol>
+                            <li>Visit tea gardens and a local tea shop.</li>
+                            <li>Visit Lawachara before departure.</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        <a class="btn primary" href="#booking"
+                           onclick="showBooking('sreemangal')">Book now</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="international">
+            <h2>International packages</h2>
+
+            <div class="cards">
+                <div class="card" id="kathmandu">
+                    <figure>
+                        <img src="Boudha.jpg" alt="Boudhanath Stupa in Kathmandu" width="320" >
+                    </figure>
+
+                    <h3>Kathmandu</h3>
+                    <p class="muted">4 days · 3 nights · Heritage</p>
+                    <p><strong>৳36,500</strong> per person</p>
+
+                    <div class="package-details">
+                        <h4>Kathmandu Heritage Break</h4>
+                        <p><strong>Included</strong> — Hotel, breakfast and airport transfers</p>
+                        <h4>Itinerary</h4>
+                        <ol>
+                            <li>Airport transfer and hotel check-in.</li>
+                            <li>Visit Durbar Square and Boudhanath.</li>
+                            <li>Visit a Himalayan viewpoint in Nagarkot.</li>
+                            <li>Transfer to the airport.</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        <a class="btn primary" href="#booking"
+                           onclick="showBooking('kathmandu')">Book now</a>
+                    </p>
+                </div>
+
+                <div class="card" id="bangkok">
+                    <figure>
+                        <img src="Bangkok.jpg" alt="Wat Arun temple in Bangkok" width="320" >
+                    </figure>
+
+                    <h3>Bangkok</h3>
+                    <p class="muted">4 days · 3 nights · Heritage</p>
+                    <p><strong>৳42,500</strong> per person</p>
+
+                    <div class="package-details">
+                        <h4>Bangkok City Break</h4>
+                        <p><strong>Included</strong> — Hotel, breakfast and guided city tour</p>
+                        <h4>Itinerary</h4>
+                        <ol>
+                            <li>Hotel check-in and riverside walk.</li>
+                            <li>Visit Wat Arun and explore the old city.</li>
+                            <li>Explore local markets or plan a free day.</li>
+                            <li>Hotel checkout and departure.</li>
+                        </ol>
+                    </div>
+
+                    <p>
+                        <a class="btn primary" href="#booking"
+                           onclick="showBooking('bangkok')">Book now</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" hidden>
+            <h2>Booking registration</h2>
+
+            <form class="panel" aria-describedby="booking-note"
+                  onsubmit="return validateForm()" novalidate>
+                <fieldset>
+                    <legend>Traveler info</legend>
+
+                    <p>
+                        <label for="traveler">Full name</label>
+                        <input type="text" id="traveler" name="traveler"
+                               autocomplete="name" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone"
+                               autocomplete="tel" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                               autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="request">Special request (optional)</label>
+                        <textarea id="request" name="request" rows="3"></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Package &amp; date</legend>
+
+                    <p>
+                        <label for="package">Package</label>
+                        <select id="package" name="package" required>
+                            <option value="" selected disabled>Select a package</option>
+                            <option value="coxs-bazar">Cox’s Bazar Beach Escape</option>
+                            <option value="sundarbans">Sundarbans Wildlife Cruise</option>
+                            <option value="sajek">Sajek Valley Getaway</option>
+                            <option value="sreemangal">Sreemangal Tea Trails</option>
+                            <option value="kathmandu">Kathmandu Heritage Break</option>
+                            <option value="bangkok">Bangkok City Break</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="date">Travel date</label>
+                        <input type="date" id="date" name="date" required>
+                    </p>
+
+                    <p>
+                        <label for="guests">Travelers</label>
+                        <input type="number" id="guests" name="guests"
+                               min="1" max="20" value="1" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment method</legend>
+
+                    <label>
+                        <input type="radio" name="payment" value="bkash" required> bKash
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="nagad"> Nagad
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="card"> Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="pay-later"> Pay later
+                    </label>
+                </fieldset>
+
+                <p id="booking-note" role="status">Fill in the form to validate your demo booking.</p>
+                <button class="btn primary" type="submit">Submit booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bottom" id="contact">
+        <div class="wrap">
+            <div class="foot-grid">
+                <section>
+                    <a class="brand" href="#home">◈ Shoreline</a>
+                    <p>Tour packages in Bangladesh and abroad.</p>
+                </section>
+
+                <section>
+                    <h2>Explore</h2>
+                    <ul>
+                        <li><a href="#bangladesh">Bangladesh packages</a></li>
+                        <li><a href="#international">International packages</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contact</h2>
+                    <p>Dhaka, Bangladesh</p>
+                    <a href="mailto:hello@shoreline.example">hello@shoreline.example</a>
+                </section>
+            </div>
+
+            <small>Booking prototype. Contact details and prices are examples.</small>
+
+        
+        </div>
+    </footer>
+
+    <script src="tour.js"></script>
+</body>
+</html>

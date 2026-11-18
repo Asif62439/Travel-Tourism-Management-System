@@ -1,0 +1,264 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #101a2e;
+  color: #f1f5ff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: #d6f65a; }
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* Header and navigation */
+.top, .bottom { background: #0c1527; }
+.top { border-bottom: 1px solid #355077; }
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 74px;
+  gap: 12px;
+}
+
+.brand {
+  color: #d6f65a;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav, #packages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav a, #packages a {
+  padding: 8px 14px;
+  color: #f1f5ff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#packages a { border: 1px solid #355077; }
+
+.nav a:hover, #packages a:hover {
+  color: #d6f65a;
+  background: #172945;
+}
+
+/* Hero section */
+main.wrap {
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.hero > div, .hero figure {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.05;
+}
+
+.hero strong, .card > p strong { color: #d6f65a; }
+.hero p, .muted, small { color: #b5c3dc; }
+
+figure { margin: 0; }
+
+.hero img, .card img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero img {
+  height: 320px;
+  border-radius: 22px;
+}
+
+.card img {
+  height: 170px;
+  border-radius: 12px;
+}
+
+#sundarbans img { object-position: right center; }
+
+/* Package cards */
+#bangladesh, #international, #booking {
+  margin-top: 32px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 240px;
+  min-width: 0;
+  max-width: 360px;
+  padding: 14px;
+  background: #172945;
+  border: 1px solid #355077;
+  border-radius: 18px;
+}
+
+.card h3 { margin: 14px 0 4px; }
+.card p { margin: 4px 0 10px; }
+
+.package-details { border-top: 1px solid #355077; }
+.package-details h4 { margin: 12px 0 6px; }
+.package-details ol { padding-left: 22px; }
+.package-details li { margin-bottom: 5px; }
+
+.card > p:last-child {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #d6f65a;
+  color: #101a2e;
+  border: 0;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover { background: #e3ff86; }
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+  outline: 2px solid #d6f65a;
+  outline-offset: 3px;
+}
+
+/* Booking form */
+.panel {
+  width: 100%;
+  max-width: 640px;
+  padding: 20px;
+  background: #172945;
+  border: 1px solid #355077;
+  border-radius: 18px;
+}
+
+.panel fieldset {
+  min-width: 0;
+  margin: 0 0 16px;
+  padding: 12px;
+  border: 1px solid #355077;
+  border-radius: 10px;
+}
+
+.panel legend { font-weight: bold; }
+.panel p { margin: 8px 0; }
+
+.panel p label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.panel p input, .panel select, .panel textarea {
+  width: 100%;
+  padding: 8px 10px;
+  color: #f1f5ff;
+  background: #101a2e;
+  border: 1px solid #355077;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.panel fieldset > label {
+  display: inline-block;
+  margin: 4px 12px 4px 0;
+}
+
+.panel button { margin-top: 12px; }
+
+/* Demo payment slip */
+#payment-slip {
+  margin-top: 24px;
+}
+
+#payment-slip .btn {
+  margin-top: 12px;
+}
+
+/* Footer */
+.bottom {
+  border-top: 1px solid #355077;
+  padding: 24px 0;
+}
+
+.foot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.foot-grid section { flex: 1 1 200px; }
+
+.bottom h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.photo-sources { margin-top: 22px; }
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero h1 { font-size: 40px; }
+  .hero img { height: 220px; }
+
+  .card {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
