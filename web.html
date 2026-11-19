@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelGo - Tourist Registration</title>
+
+    <link rel="stylesheet" href="web.css"> 
+     <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+
+        <h1 class="class1">TravelGo 🌍</h1>
+        <h2 class="class2">START YOUR JOURNEY</h2>
+        <p id="para1">Explore • Discover • Travel</p>
+
+
+    <div class="container">
+
+        <div class="image-section">
+            <img src="https://thumbs.dreamstime.com/b/happy-travel-woman-vacation-concept-funny-traveler-enjoy-her-trip-ready-to-adventure-happy-travel-woman-vacation-concept-118679424.jpg" alt="Beautiful Travel Destination">
+
+            <div class="image-text">
+                <h2>Explore The World</h2>
+                <p>Your journey begins here!</p>
+            </div>
+        </div>
+
+        <div class="form">
+
+            <h1>Create Your Tourist Account</h1>
+            <p class="subtitle">Join us and make your travel dreams come true.</p>
+
+            <form id="registrationForm" onsubmit="return validateForm()"
+            novalidate>
+
+    
+                <h2>Personal Information</h2>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                placeholder="Enter Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                placeholder="Enter Your Email" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                min="1" placeholder="Enter Your Age" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label>Gender:</label>
+
+                <div class="options">
+                
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="destination">Destination:</label>
+
+                <select id="destination" name="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="Bandarban">Bandarban</option>
+                    <option value="Sajek">Sajek</option>
+                    <option value="Kuakata">Kuakata</option>
+                    <option value="Sylhet">Sylhet</option>
+                    <option value="Khulna">Khulna</option>
+                    <option value="Nafakhum Waterfall">Nafakhum Waterfall</option>
+                    <option value="Thanchi">Thanchi</option>
+                    <option value="Sundarban">Sundarban</option>
+                    <option value="Mahasthangar">Mahasthangar</option>
+                    <option value="Mainamati">Mainamati</option>
+                </select>
+
+
+                
+                <h2 class="class3">Travel Preference</h2>
+
+                <label>Preferred Travel Type:</label>
+
+                <div class="options">
+                    <input type="radio" id="adventure" name="travelType" value="Adventure" required>
+                    <label for="adventure">Adventure</label>
+
+                    <input type="radio" id="family" name="travelType" value="Family">
+                    <label for="family">Family</label>
+
+                    <input type="radio" id="honeymoon" name="travelType" value="Honeymoon">
+                    <label for="honeymoon">Honeymoon</label>
+
+                    <input type="radio" id="solo" name="travelType" value="Solo">
+                    <label for="solo">Solo</label>
+
+                    <input type="radio" id="luxury" name="travelType" value="Luxury">
+                    <label for="luxury">Luxury</label>
+                </div>
+
+                <label for="travelDate">Preferred Travel Date:</label>
+                <input type="date" id="travelDate" name="travelDate" required>
+
+                <h2 clas="class4">Account Information</h2>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"
+                placeholder="Enter Username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                placeholder="Enter Password" minlength="6" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword"
+                name="confirmPassword" placeholder="Confirm Password" required>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms & Conditions.</label>
+                </div>
+
+                <h2 class="class5">Emergency Contact</h2>
+
+                <label for="contactName">Contact Name:</label>
+                <input type="text" id="contactName" name="contactName"
+                placeholder="Enter Emergency Contact Name" required>
+
+                <label for="relationship">Relationship:</label>
+
+                <select id="relationship" name="relationship" required>
+                    <option value="">Select Relationship</option>
+                    <option value="Parents">Parents</option>
+                    <option value="Brother/Sister">Brother/Sister</option>
+                    <option value="Spouse">Spouse</option>
+                </select>
+
+                <label for="emergencyPhone">Emergency Phone:</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone"
+                placeholder="01XXXXXXXXX" pattern="01[0-9]{9}" required>
+
+                <div class="button-group">
+                    <button type="submit">Create Account</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+
+                <p id="message"></p>
+
+                <p class="login">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

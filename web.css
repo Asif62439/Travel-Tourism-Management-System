@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    color: black;
+}
+
+
+.class1 {
+    text-align: center;
+    background-color: darkcyan;
+    color: black;
+    padding: 25px;
+    font-size: 38px;
+}
+
+.class2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-size: 23px;
+}
+
+#para1 {
+    text-align: center;
+    background-color: darkcyan;
+    color: black;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-section {
+    width: 40%;
+    min-height: 700px;
+    position: relative;
+}
+
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.image-text {
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    right: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-text h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.form {
+    width: 60%;
+    padding: 20px;
+}
+
+
+.form h1 {
+    color: darkcyan;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+
+.subtitle {
+    text-align: center;
+    color: lightslategray;
+    margin-bottom: 25px;
+}
+
+
+form h2 {
+    color: darkcyan;
+    border-bottom: 2px solid darkcyan;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.class3,
+.class4,
+.class5 {
+    color: darkcyan;
+}
+
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+input:focus,
+select:focus {
+    border-color: darkcyan;
+    box-shadow: 0 0 5px gray;
+}
+
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.options input {
+    width: auto;
+}
+
+.options label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.terms input {
+    width: auto;
+}
+
+.terms label {
+    cursor: pointer;
+}
+
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006666;
+}
+
+
+.reset-btn {
+    background-color: black;
+}
+
+.reset-btn:hover {
+    background-color: red;
+}
+
+#message {
+    margin-top: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login a {
+    color: darkcyan;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
