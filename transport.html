@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo-Transport Booking</title>
+    <link rel="icon"
+        href="https://img.magnific.com/premium-vector/travel-agency-modern-abstract-logo-illustration_291137-275.jpg?semt=ais_hybrid&w=740&q=80">
+
+    <link rel="stylesheet" href="E:\Project_Travel\transport.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>TravelGo</h1>
+            <p>Explore • Discover • Travel</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="packages.html">Tour Packages</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="#transport">Transport</a>
+        </nav>
+    </header>
+
+
+
+    <div class="booking-section">
+        <h2>Bus Booking</h2>
+
+        <form action="" method="get" id="busForm" novalidate>
+            <fieldset>
+                <legend>Enter your journey details and select your bus</legend>
+
+                <div>
+                    <label for="busName">Available Bus:</label>
+                    <select id="busName" name="busName" required>
+                        <option value="" disabled selected>Select Bus</option>
+                        <option>Hanif Enterprise</option>
+                        <option>Shyamoli Paribahan</option>
+                        <option>Green Line</option>
+                        <option>ENA Transport</option>
+                    </select>
+                    <span id="busNameError" class="error"></span>
+                </div>
+                <br>
+
+
+                <div>
+                    <label for="busClass">Bus Class:</label>
+                    <select id="busClass" name="busClass" required>
+                        <option value="" disabled selected>Select Class</option>
+                        <option>Non-AC (Tk 1000/person)</option>
+                        <option>AC (Tk 1500/person)</option>
+                        <option>Sleeping Coach(Tk 2000/person)</option>
+                    </select>
+                    <span id="busClassError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="busFrom">From:</label>
+                    <select id="busFrom" name="busFrom" required>
+                        <option value="" disabled selected>Select Departure</option>
+                        <option>Dhaka</option>
+                        <option>Chattogram</option>
+                        <option>Sylhet</option>
+                        <option>Rajshahi</option>
+                        <option>Khulna</option>
+                        <option>Cox's Bazar</option>
+                    </select>
+                    <span id="busFromError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="busTo">To:</label>
+                    <select id="busTo" name="busTo" required>
+                        <option value="" disabled selected>Select Destination</option>
+                        <option>Dhaka</option>
+                        <option>Chattogram</option>
+                        <option>Sylhet</option>
+                        <option>Rajshahi</option>
+                        <option>Khulna</option>
+                        <option>Cox's Bazar</option>
+                    </select>
+                    <span id="busToError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+
+                    <label for="busDate">Travel Date:</label>
+                    <input type="date" id="busDate" name="busDate" required>
+                    <span id="busDateError" class="error"></span>
+                </div>
+                <br>
+
+
+                <div>
+
+                    <label for="busTime">Departure Time:</label>
+                    <select id="busTime" name="busTime" required>
+                        <option value="" disabled selected>Select Time</option>
+                        <option>6:00 AM</option>
+                        <option>8:00 AM</option>
+                        <option>10:00 AM</option>
+                        <option>2:00 PM</option>
+                        <option>6:00 PM</option>
+                        <option>10:00 PM</option>
+                    </select>
+                    <span id="busTimeError" class="error"></span>
+                </div>
+                <br>
+                <div>
+                    <label for="busPassenger">Number of Passengers:</label>
+                    <input type="number" id="busPassenger" name="busPassengers" min="1" required>
+                    <span id="busPassengerError" class="error"></span>
+                </div>
+                <br>
+
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="booking-section">
+        <h2>Train Booking</h2>
+
+        <form action="" method="get" id="trainForm" novalidate>
+            <fieldset>
+
+                <legend>Enter your journey details and select your train</legend>
+
+                <div>
+                    <label for="trainName">Available Train:</label>
+                    <select id="trainName" name="trainName" required>
+                        <option value="" disabled selected>Select Train</option>
+                        <option>Subarna Express</option>
+                        <option>Sonar Bangla Express</option>
+                        <option>Parabat Express</option>
+                        <option>Upaban Express</option>
+                    </select>
+                    <span id="trainNameError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="trainClass">Seat Class:</label>
+                    <select id="trainClass" name="trainClass" required>
+                        <option value="" disabled selected>Select Class</option>
+                        <option>Non-AC Seat (Tk 500/person)</option>
+                        <option>AC Seat (Tk 1000/person)</option>
+                        <option>Non-AC Cabin (Tk 1500)</option>
+                        <option>AC Cabin (Tk 2000)</option>
+                    </select>
+                    <span id="trainClassError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="trainFrom">From:</label>
+                    <select id="trainFrom" name="trainFrom" required>
+                        <option value="" disabled selected>Select Departure</option>
+                        <option>Dhaka</option>
+                        <option>Chattogram</option>
+                        <option>Sylhet</option>
+                        <option>Rajshahi</option>
+                        <option>Khulna</option>
+                        <option>Cox's Bazar</option>
+                    </select>
+                    <span id="trainFromError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="trainTo">To:</label>
+                    <select id="trainTo" name="trainTo" required>
+                        <option value="" disabled selected>Select Destination</option>
+                        <option>Dhaka</option>
+                        <option>Chattogram</option>
+                        <option>Sylhet</option>
+                        <option>Rajshahi</option>
+                        <option>Khulna</option>
+                        <option>Cox's Bazar</option>
+                    </select>
+                    <span id="trainToError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="trainDate">Travel Date:</label>
+                    <input type="date" id="trainDate" name="trainDate" required>
+                    <span id="trainDateError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="trainTime">Departure Time:</label>
+                    <select id="trainTime" name="trainTime" required>
+                        <option value="" disabled selected>Select Time</option>
+                        <option>7:00 AM</option>
+                        <option>9:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>3:00 PM</option>
+                        <option>6:00 PM</option>
+                        <option>10:00 PM</option>
+                    </select>
+                    <span id="trainTimeError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="trainPassengers">Number of Passengers:</label>
+                    <input type="number" id="trainPassengers" name="trainPassengers" min="1" required>
+
+                    <span id="trainPassengersError" class="error"></span>
+                </div>
+                <br>
+
+
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="booking-section">
+        <h2>Flight Booking</h2>
+
+        <form action="" method="get" id="flightForm" novalidate>
+            <fieldset>
+                <legend>Enter your journey details and select your flight</legend>
+
+                <div>
+                    <label for="flightName">Available Airline:</label>
+                    <select id="flightName" name="flightName" required>
+                        <option value="" disabled selected>Select Airline</option>
+                        <option>Biman Bangladesh Airlines</option>
+                        <option>US-Bangla Airlines</option>
+                        <option>Air Astra</option>
+                        <option>Air Arabia</option>
+                    </select>
+                    <span id="flightNameError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flightClass">Select Seat Class:</label>
+                    <select id="flightClass" name="flightClass" required>
+                        <option value="" disabled selected>Select Class</option>
+                        <option value="Economy">Economy (Tk5,000/person)</option>
+                        <option value="Business">Business (Tk12,000/person)</option>
+                    </select>
+                    <span id="flightClassError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flightFrom">From:</label>
+                    <select id="flightFrom" name="flightFrom" required>
+                        <option value="" disabled selected>Select Departure</option>
+                        <option>Hazrat Shahjalal International Airport</option>
+                        <option>Osmani International Airport</option>
+                        <option>Shah Amanat International Airport</option>
+                    </select>
+                    <span id="flightFromError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flightTo">To:</label>
+                    <select id="flightTo" name="flightTo" required>
+                        <option value="" disabled selected>Select Destination</option>
+                        <option>Dhaka</option>
+                        <option>Chattogram</option>
+                        <option>Cox's Bazar</option>
+                        <option>Sylhet</option>
+                    </select>
+                    <span id="flightToError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flightDate">Travel Date:</label>
+                    <input type="date" id="flightDate" name="flightDate" required>
+                    <span id="flightDateError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flightTime">Departure Time:</label>
+                    <select id="flightTime" name="flightTime" required>
+                        <option value="" disabled selected>Select Time</option>
+                        <option>8:00 AM</option>
+                        <option>11:00 AM</option>
+                        <option>2:00 PM</option>
+                        <option>5:00 PM</option>
+                        <option>9:00 PM</option>
+                    </select>
+                    <span id="flightTimeError" class="error"></span>
+                </div>
+                <br>
+
+                <div>
+                    <label for="flightPassengers">Number of Passengers:</label>
+                    <input type="number" id="flightPassengers" name="flightPassengers" min="1" required>
+                        
+                    <span id="flightPassengersError" class="error"></span>
+                </div>
+                <br>
+
+
+                <button type="submit">Book Now</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+            </div>
+        </form>
+
+    
+
+
+    <footer>
+        <div class="footer-part">
+            <h2>TravelGo</h2>
+            <p>Explore · Discover · Travel</p>
+        </div>
+        <div class="footer-part">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a><br>
+            <a href="packages.html">Tour Packages</a><br>
+            <a href="hotels.html">Hotels</a><br>
+            <a href="#transport">Transport</a>
+        </div>
+        <div class="footer-part">
+
+            <h3>Contact Us</h3>
+            <p>Phone: +880 1234 567890</p>
+            <p>Email: info@travelgo.com</p>
+            <p>Dhaka, Bangladesh</p>
+        </div>
+        <script src="E:\Project_Travel\transport.js"></script>
+
+</body>
+
+</html>
