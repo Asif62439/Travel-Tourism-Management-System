@@ -1,28 +1,23 @@
-* {
-  box-sizing: border-box;         
-}
-
-html {
-  scroll-behavior: smooth;        
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  padding-top: 56px;               
-  background-color: #f4f7fa;
-  color: #2b2b2b;
+  padding-top: 56px;
+  background-color: #000f1f;
+  color: #1e293b;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
 
 nav {
-  position: fixed;                
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 56px;
-  z-index: 1000;                  
+  z-index: 1000;
   overflow: hidden;
   text-align: center;
 }
@@ -31,21 +26,21 @@ nav a {
   display: inline-block;
   padding: 0 22px;
   line-height: 56px;
-  color: white;
+  color: #f8fafc;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  background-color: #f2a900;
-  color: #2b2b2b;
+  background-color: #1c417d;
+  color: #fbbf24;
 }
 
 h1 {
   margin: 0;
   padding: 32px 20px;
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-size: 2.2rem;
   letter-spacing: 2px;
@@ -54,19 +49,20 @@ h1 {
 h2 {
   margin: 40px 0 20px;
   padding-bottom: 10px;
+  color: white;
   text-align: center;
   font-size: 1.7rem;
-  border-bottom: 3px solid #f2a900;
+  border-bottom: 3px solid #d97706;
 }
 
 h3 {
   margin: 12px 0 6px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
-
 #hotel-list {
-  max-width: 1000px;             
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px 40px;
   text-align: center;
@@ -80,33 +76,33 @@ h3 {
 }
 
 #hotel-list > article {
-  display: inline-block;           
+  display: inline-block;
   vertical-align: top;
   width: 30%;
   margin: 12px 1.2%;
   padding: 0 0 16px;
-  overflow: hidden;                
+  overflow: hidden;
   text-align: center;
   transition: box-shadow 0.3s, opacity 0.3s;
 }
 
 #hotel-list > article:hover {
-  box-shadow: 0 8px 20px #0b5d7a;
-  opacity: 0.95;
+  box-shadow: 0 10px 24px rgba(197, 214, 255, 0.596);
+  opacity: 0.98;
 }
 
 article img {
   display: block;
   width: 100%;
   height: 200px;
-  object-fit: cover;               
+  object-fit: cover;
 }
 
 article p {
   margin: 0;
   padding: 0 14px;
   font-size: 0.9rem;
-  color: #555;
+  color: #475569;
 }
 
 article ul {
@@ -116,11 +112,11 @@ article ul {
 }
 
 article li {
-  display: inline-block;           
+  display: inline-block;
   margin: 3px 2px;
   padding: 3px 10px;
-  background-color: #e3f3f8;
-  color: #0b5d7a;
+  background-color: #e0f2fe;
+  color: #0369a1;
   border-radius: 20px;
   font-size: 0.78rem;
 }
@@ -129,7 +125,8 @@ table {
   width: 100%;
   margin: 40px 0 10px;
   border-collapse: collapse;
-  background-color: white;
+  background-color: #ffffff;
+  color: #334155;
   text-align: left;
 }
 
@@ -137,25 +134,26 @@ caption {
   padding: 12px;
   font-size: 1.2rem;
   font-weight: bold;
+  color: #ffffff;
 }
 
 th, td {
   padding: 12px 14px;
-  border: 1px solid #d5dde3;
+  border: 1px solid #e2e8f0;
 }
 
 th {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: 0.85rem;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #eef6f9;       
+  background-color: #c2e0ff;
 }
 
 tbody tr:hover {
-  background-color: #fff2cc;       
+  background-color: #55aaff;
 }
 
 form p {
@@ -165,44 +163,38 @@ form p {
 label {
   font-weight: bold;
   font-size: 0.9rem;
+  color: #1e293b;
 }
 
-form input,
-form select,
-form textarea {
+form input, form select, form textarea {
   width: 100%;
   margin-top: 4px;
   padding: 10px 12px;
-  border: 2px solid #b8c4cc;
+  border: 2px solid #cbd5e1;
   border-radius: 6px;
-  background-color: white;
+  background-color: #ffffff;
   font-family: inherit;
   font-size: 1rem;
+  color: #0f172a;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-form input:focus,
-form select:focus,
-form textarea:focus {
+form input:focus, form select:focus, form textarea:focus {
   outline: none;
-  border-color: #0b5d7a;
-  box-shadow: 0 0 6px #0b5d7a;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
 form textarea {
   resize: vertical;
 }
 
-
 #pay_cash, #pay_card, #pay_mobile, #terms {
   width: auto;
   margin: 0 8px 0 0;
 }
 
-label[for="pay_cash"],
-label[for="pay_card"],
-label[for="pay_mobile"],
-label[for="terms"] {
+label[for="pay_cash"], label[for="pay_card"], label[for="pay_mobile"], label[for="terms"] {
   font-weight: normal;
   font-size: 1rem;
 }
@@ -212,7 +204,7 @@ button {
   margin-right: 8px;
   border: none;
   border-radius: 6px;
-  color: white;
+  color: #ffffff;
   font-family: inherit;
   font-size: 1rem;
   cursor: pointer;
@@ -220,38 +212,38 @@ button {
 }
 
 button[type="submit"] {
-  background-color: #0b5d7a;
+  background-color: #0284c7;
 }
 
 button[type="reset"] {
-  background-color: #7a838a;
+  background-color: #64748b;
 }
 
 button[type="submit"]:hover {
-  background-color: #1488b0;
+  background-color: #0369a1;
 }
 
 button[type="reset"]:hover {
-  background-color: #a0a8ae;
+  background-color: #475569;
 }
 
 h1, nav, th {
-  background-color: #0b5d7a;
+  background-color: #0f172a;
 }
-
-h2, h3, caption {
-  color: #0b5d7a;
+h3{
+  color:#0f172a;
 }
-
+h2,caption {
+  color: #ffffff;
+}
 
 nav, #hotel-list > article, table, #booking {
-  box-shadow: 0 4px 12px gray;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
 }
 
-
 #hotel-list > article, #booking {
-  background-color: white;
-  border: 1px solid #d5dde3;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
 }
 
@@ -260,19 +252,19 @@ nav, #hotel-list > article, table, #booking {
 }
 
 .error {
-  border-color: #d93025;
-  background-color: #fdecea;
+  border-color: #dc2626;
+  background-color: #fef2f2;
 }
 
 .success {
-  border-color: #1e8e3e;
-  background-color: #e6f4ea;
+  border-color: #16a34a;
+  background-color: #f0fdf4;
 }
 
 .error-message {
   display: block;
   margin-top: 4px;
-  color: #d93025;
+  color: #dc2626;
   font-size: 0.8rem;
 }
 
@@ -282,26 +274,23 @@ nav, #hotel-list > article, table, #booking {
 
 @media (max-width: 800px) {
   #hotel-list > article {
-    display: block;               
+    display: block;
     width: auto;
     margin: 16px 0;
   }
-
   nav a {
     padding: 0 10px;
     font-size: 0.85rem;
   }
-
   table {
     font-size: 0.85rem;
   }
-
   th, td {
     padding: 8px;
   }
-
   #booking {
     padding: 10px 16px 24px;
   }
 }
+
 
